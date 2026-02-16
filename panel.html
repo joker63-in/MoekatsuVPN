@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoekatsuVPN Premium Panel</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Arial,sans-serif;
+  background:url("poto.jpg") center/cover fixed;
+  color:#e5e7eb;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:linear-gradient(
+    rgba(2,6,23,.92),
+    rgba(2,6,23,.92)
+  );
+  z-index:-1;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:25px;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  margin-bottom:35px;
+}
+.header-left h1{
+  margin:0;
+  color:#22c55e;
+  font-size:26px;
+}
+.header-left p{
+  margin:6px 0 0;
+  color:#9ca3af;
+  font-size:14px;
+}
+.badge{
+  display:inline-block;
+  margin-top:6px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#22c55e;
+  color:#020617;
+  font-size:12px;
+  font-weight:bold;
+}
+.logout{
+  background:#ef4444;
+  border:none;
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:bold;
+  cursor:pointer;
+  color:white;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:#020617;
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 0 30px rgba(0,0,0,.65);
+  transition:.25s;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 45px rgba(0,0,0,.9);
+}
+.card-top{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+.card-top img{
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  object-fit:cover;
+  background:rgba(255,255,255,.08);
+  padding:6px;
+}
+.card h2{
+  margin:0;
+  font-size:20px;
+}
+.meta{
+  font-size:13px;
+  color:#9ca3af;
+  margin-top:4px;
+}
+.desc{
+  margin:10px 0 0;
+  font-size:14px;
+  color:#cbd5f5;
+  line-height:1.5;
+}
+
+/* BUTTONS */
+.actions{
+  display:flex;
+  gap:12px;
+  margin-top:18px;
+}
+.actions button{
+  flex:1;
+  padding:11px;
+  border:none;
+  border-radius:999px;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:14px;
+}
+
+/* COLOR THEMES */
+.green{border:1px solid #22c55e}
+.green .primary{background:#22c55e;color:#020617}
+
+.blue{border:1px solid #38bdf8}
+.blue .primary{background:#38bdf8;color:#020617}
+
+.red{border:1px solid #ef4444}
+.red .primary{background:#ef4444;color:white}
+
+.purple{border:1px solid #a855f7}
+.purple .primary{background:#a855f7;color:white}
+
+.secondary{
+  background:#111827;
+  color:#e5e7eb;
+  border:1px solid rgba(255,255,255,.1);
+}
+
+/* FOOTER */
+footer{
+  margin-top:60px;
+  text-align:center;
+  color:#9ca3af;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <div class="header-left">
+    <h1>MoekatsuVPN</h1>
+    <p>Selamat datang di panel premium Anda</p>
+    <span class="badge">PREMIUM USER</span>
+  </div>
+  <button class="logout" onclick="logout()">Logout</button>
+</header>
+
+<div class="grid">
+
+  <!-- UDP HC -->
+  <div class="card green">
+    <div class="card-top">
+      <img src="logo/hc.jpg">
+      <div>
+        <h2>UDP HC</h2>
+        <div class="meta">Tersedia: 120 akun</div>
+      </div>
+    </div>
+    <div class="desc">
+      Akun vpn dan konfig
+    </div>
+    <div class="actions">
+      <button class="primary">Server SG</button>
+      <button class="secondary">Server ID</button>
+    </div>
+  </div>
+
+  <!-- UDP ZIVPN -->
+  <div class="card blue">
+    <div class="card-top">
+      <img src="logo/zivpn.jpg">
+      <div>
+        <h2>UDP ZIVPN</h2>
+        <div class="meta">Tersedia: 120 akun</div>
+      </div>
+    </div>
+    <div class="desc">
+      Akun vpn dan konfig
+    </div>
+    <div class="actions">
+      <button class="primary">Server SG</button>
+      <button class="secondary">Server ID</button>
+    </div>
+  </div>
+
+  <!-- SSH -->
+  <div class="card red">
+    <div class="card-top">
+      <img src="logo/ssh.jpg">
+      <div>
+        <h2>SSH</h2>
+        <div class="meta">Tersedia: 90 akun</div>
+      </div>
+    </div>
+    <div class="desc">
+      akun vpn, tanpa konfig setingan berbeda beda tiap tkp.
+    </div>
+    <div class="actions">
+      <button class="primary">Server SG</button>
+      <button class="secondary">Server ID</button>
+    </div>
+  </div>
+
+  <!-- V2RAY -->
+  <div class="card purple">
+    <div class="card-top">
+      <img src="logo/v2ray.jpg">
+      <div>
+        <h2>V2RAY</h2>
+        <div class="meta">Tersedia: 30 akun</div>
+      </div>
+    </div>
+    <div class="desc">
+      akun vpn, tanpa konfig setingan berbeda beda tiap tkp.
+    </div>
+    <div class="actions">
+      <button class="primary">Server SG</button>
+      <button class="secondary">Server ID</button>
+    </div>
+  </div>
+
+</div>
+
+<footer id="footer"></footer>
+
+</div>
+
+<script>
+function logout(){
+  localStorage.clear();
+  location.href="index.html";
+}
+
+const d=new Date();
+footer.innerHTML=`© ${d.toLocaleString('id',{month:'long'})} ${d.getFullYear()} • MoekatsuVPN`;
+</script>
+
+</body>
+</html>

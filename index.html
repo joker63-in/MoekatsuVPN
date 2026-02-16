@@ -12,7 +12,7 @@ body{
   margin:0;
   font-family:system-ui,Arial,sans-serif;
   color:#e5e7eb;
-  background:url("poto.jpg") center/cover fixed;
+  background:url("logo/poto.jpg") center/cover fixed;
 }
 body::before{
   content:"";
@@ -25,30 +25,27 @@ body::before{
 .container{
   max-width:1100px;
   margin:auto;
-  padding:25px;
+  padding:20px;
 }
 
 /* HEADER */
 header{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  margin-bottom:35px;
+  align-items:center;
+  margin-bottom:28px;
 }
 .logo{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:8px;
 }
-.logo img{height:48px}
-.logo b{
-  font-size:18px;
-  color:#22c55e;
-}
+.logo img{height:42px}
+.logo b{color:#22c55e;font-size:17px}
 
 .profile-btn{
   display:none;
-  padding:8px 16px;
+  padding:7px 14px;
   border-radius:8px;
   border:none;
   background:#22c55e;
@@ -57,44 +54,50 @@ header{
 }
 
 /* TITLE */
-.title{text-align:center;margin-bottom:40px}
-.title h1{margin:0;font-size:32px}
-.title p{margin-top:8px;color:#9ca3af}
+.title{text-align:center;margin-bottom:28px}
+.title h1{margin:0;font-size:28px}
+.title p{margin-top:6px;color:#9ca3af;font-size:14px}
 
 /* SERVICES */
 .services{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:14px;
 }
 
+/* CARD */
 .card{
   background:#020617;
-  border-radius:16px;
-  padding:22px;
+  border-radius:14px;
+  padding:14px;
   text-align:center;
-  box-shadow:0 0 20px rgba(0,0,0,.6);
+  box-shadow:0 0 12px rgba(0,0,0,.6);
 }
 .card img{
-  width:70px;
-  height:70px;
+  width:56px;
+  height:56px;
   border-radius:50%;
   object-fit:cover;
-  margin:0 auto 15px;
+  margin:0 auto 10px;
   background:rgba(255,255,255,.08);
-  padding:6px;
+  padding:5px;
+}
+.card h2{
+  font-size:17px;
+  margin:6px 0 4px;
 }
 .card p{
-  font-size:14px;
+  font-size:13px;
   color:#cbd5f5;
-  margin:4px 0;
+  margin:2px 0;
 }
 .card button{
-  margin-top:18px;
-  padding:12px;
+  margin-top:10px;
+  padding:9px;
   width:100%;
-  border-radius:10px;
+  border-radius:9px;
   border:none;
+  font-size:14px;
   font-weight:bold;
   cursor:pointer;
 }
@@ -111,19 +114,19 @@ header{
 
 /* PREMIUM */
 .premium{
-  margin:70px auto 0;
-  max-width:500px;
+  margin:50px auto 0;
+  max-width:420px;
   text-align:center;
-  padding:30px;
-  border-radius:18px;
+  padding:22px;
+  border-radius:16px;
   border:1px solid gold;
 }
-.premium h2{color:gold}
-.premium p{color:#facc15}
+.premium h2{color:gold;margin-bottom:6px}
+.premium p{color:#facc15;font-size:14px}
 .premium button{
-  margin-top:15px;
-  padding:12px 28px;
-  border-radius:10px;
+  margin-top:12px;
+  padding:10px 24px;
+  border-radius:9px;
   border:none;
   background:gold;
   font-weight:bold;
@@ -142,77 +145,61 @@ header{
 .modal-content,
 .captcha-box{
   background:#020617;
-  max-width:330px;
-  margin:15% auto;
-  padding:25px;
-  border-radius:16px;
+  max-width:320px;
+  margin:18% auto;
+  padding:20px;
+  border-radius:14px;
   text-align:center;
 }
-
-/* PROFIL POLISH */
 .modal-content img{
-  width:100px;
-  height:100px;
+  width:90px;
+  height:90px;
   border-radius:50%;
   object-fit:cover;
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
-.modal-content h3{margin-bottom:12px}
-.modal-content p{
-  margin:6px 0;
-  font-size:15px;
-}
-.modal-content button{
+.modal-content p{font-size:14px;margin:5px 0}
+.modal-content button,
+.captcha-box button{
   width:100%;
-  margin-top:10px;
-  padding:10px;
+  margin-top:8px;
+  padding:9px;
   border-radius:8px;
   border:none;
   font-weight:bold;
   cursor:pointer;
 }
-.modal-content button:first-of-type{
-  background:#38bdf8;
-  color:#020617;
-}
-.modal-content button:nth-of-type(2){
-  background:#ef4444;
-  color:#fff;
-}
-.modal-content button:last-of-type{
-  background:#22c55e;
-}
+.modal-content button:nth-child(4){background:#38bdf8}
+.modal-content button:nth-child(5){background:#ef4444;color:#fff}
+.modal-content button:last-child{background:#22c55e}
 
 /* CAPTCHA */
 .captcha-code{
-  font-size:32px;
+  font-size:28px;
   letter-spacing:5px;
   margin:10px 0;
   color:#38bdf8;
 }
 input{
   width:100%;
-  padding:10px;
+  padding:9px;
   border-radius:8px;
   border:none;
-  margin-top:8px;
-}
-.captcha-box button{
-  width:100%;
-  margin-top:10px;
-  padding:10px;
-  border-radius:8px;
-  border:none;
-  cursor:pointer;
 }
 
 /* FOOTER */
 footer{
-  margin-top:60px;
-  padding:15px;
+  margin-top:45px;
+  padding:12px;
   text-align:center;
   color:#9ca3af;
-  font-size:14px;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .card img{width:48px;height:48px}
+  .card h2{font-size:16px}
 }
 </style>
 </head>
@@ -223,70 +210,78 @@ footer{
 
 <header>
   <div class="logo">
-    <img src="logo.png">
-    <b>MoekatsuVPN</b>
+    <img src="logo/logo.png">
+    <b>MoekatsuStore</b>
   </div>
   <button id="profileBtn" class="profile-btn" onclick="openProfile()">Profil</button>
 </header>
 
 <div class="title">
-  <h1>SSH & V2RAY FREE</h1>
-  <p>Pilih layanan gratis di bawah ini</p>
+  <h1>Selamat Datang</h1>
+  <p>Pilih layanan kami di bawah ini</p>
 </div>
 
 <div class="services">
+
   <div class="card green">
-    <img src="hc.jpg">
-    <h2>UDP HC FREE</h2>
-    <p>VPN & Config Gratis</p>
+    <img src="logo/hc.jpg">
+    <h2>UDP HC</h2>
+    <p>buat akun vpn</p>
     <button onclick="openCaptcha('https://facebook.com')">BUAT</button>
   </div>
 
   <div class="card blue">
-    <img src="zivpn.jpg">
-    <h2>UDP ZIVPN FREE</h2>
-    <p>ZIVPN / FICLASH</p>
+    <img src="logo/zivpn.jpg">
+    <h2>UDP ZIVPN</h2>
+    <p>buat akun vpn</p>
     <button onclick="openCaptcha('https://google.com')">BUAT</button>
   </div>
 
   <div class="card red">
-    <img src="ssh.jpg">
-    <h2>SSH FREE</h2>
-    <p>Secure Shell</p>
+    <img src="logo/ssh.jpg">
+    <h2>SSH</h2>
+    <p>buat akun vpn</p>
     <button onclick="openCaptcha('https://fast.com')">BUAT</button>
   </div>
-</div>
-  
+
   <div class="card green">
-    <img src="v2ray.jpg">
-    <h2>V2RAY FREE</h2>
-    <p>Akun VPN</p>
+    <img src="logo/v2ray.jpg">
+    <h2>V2RAY</h2>
+    <p>buat akun vpn</p>
     <button onclick="openCaptcha('https://facebook.com')">BUAT</button>
   </div>
   
   <div class="card green">
-    <img src="taek.jpg">
+    <img src="logo/taek.jpg">
     <h2>MODOL</h2>
-    <p>Kumpulan Taek</p>
+    <p>kumpulan taek</p>
     <button onclick="openCaptcha('https://facebook.com')">BUAT</button>
   </div>
+  
+  <div class="card green">
+    <img src="logo/robot.png">
+    <h2>Paket data & Jasa</h2>
+    <p>Pilih layanan lain</p>
+    <button onclick="openCaptcha('https://facebook.com')">BUAT</button>
+  </div>
+
+</div>
 
 <div class="premium">
-  <h2>DAFTAR</h2>
-  <p>Untuk Masuk Ke Panel Premium</p>
-  <button onclick="register()">Tulis Nama Aja</button>
+  <h2>Tulis Nama Untuk Daftar</h2>
+  <p>Masuk ke panel premiun untuk beli</p>
+  <button class="btn-register" onclick="register()">➕ Daftar Sekarang</button>
 </div>
 
 </div>
-
 <!-- PROFIL -->
 <div class="modal" id="profileModal">
   <div class="modal-content">
-    <img src="profile.jpg">
+    <img src="logo/profile.jpg">
     <h3>Profil User</h3>
     <p id="profileName"></p>
     <p id="profileStatus"></p>
-    <button onclick="goPanel()">Masuk ke Panel Premium</button>
+    <button onclick="goPanel()">Panel Premium</button>
     <button onclick="logout()">Keluar</button>
     <button onclick="closeProfile()">Tutup</button>
   </div>
@@ -308,7 +303,6 @@ footer{
 <script>
 let targetLink="",captcha="";
 
-/* CAPTCHA */
 function openCaptcha(l){
   targetLink=l;
   captcha=Math.random().toString(36).substr(2,5).toUpperCase();
@@ -316,7 +310,7 @@ function openCaptcha(l){
   captchaInput.value="";
   captchaModal.style.display="block";
 }
-function closeCaptcha(){ captchaModal.style.display="none"; }
+function closeCaptcha(){captchaModal.style.display="none";}
 function verifyCaptcha(){
   if(captchaInput.value.toUpperCase()===captcha){
     captchaModal.style.display="none";
@@ -324,7 +318,6 @@ function verifyCaptcha(){
   }else alert("Captcha salah!");
 }
 
-/* USER */
 function register(){
   const u=prompt("Masukkan username:");
   if(u){
@@ -334,12 +327,11 @@ function register(){
   }
 }
 function checkUser(){
-  profileBtn.style.display =
-    localStorage.getItem("user") ? "block":"none";
+  profileBtn.style.display=localStorage.getItem("user")?"block":"none";
 }
 function openProfile(){
   const u=localStorage.getItem("user");
-  if(!u){alert("Silakan daftar terlebih dahulu");return;}
+  if(!u){alert("Silakan daftar");return;}
   profileName.innerText="Nama : "+u;
   profileStatus.innerText="Status : "+localStorage.getItem("status");
   profileModal.style.display="block";
@@ -352,10 +344,8 @@ function logout(){
   profileBtn.style.display="none";
 }
 
-/* FOOTER */
 const d=new Date();
 footer.innerHTML=`© ${d.toLocaleString('id',{month:'long'})} ${d.getFullYear()} • MoekatsuVPN`;
-
 checkUser();
 </script>
 

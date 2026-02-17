@@ -24,7 +24,7 @@
     <div class="data">Expired <span id="expired"></span></div>
     <div class="data">Port <span id="port"></span></div>
     <div class="data">Support <span id="support"></span></div>
-    <div class="data">Alat<span id="support"></span></div>
+    <div class="data">Alat<span id="alat"></span></div>
 
     <div class="status" id="status"></div>
 
@@ -53,6 +53,7 @@ fetch("akun.txt")
     document.getElementById("expired").innerText = result.expired;
     document.getElementById("port").innerText = result.port;
     document.getElementById("support").innerText = result.support;
+    document.getElementById("alat").innerText = result.alat;
     document.getElementById("status").innerText = "STATUS : " + result.status;
 });
 

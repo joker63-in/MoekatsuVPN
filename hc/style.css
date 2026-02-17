@@ -1,0 +1,118 @@
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    position:relative;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;   /* ini bikin tengah vertikal */
+    padding:20px;         /* jangan pakai padding-top 80px lagi */
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url("bg.jpg") center/cover no-repeat;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6); /* atur gelapnya di sini */
+    z-index:-1;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+
+    background: rgba(15, 25, 50, 0.55); /* transparan */
+    backdrop-filter: blur(15px);       /* efek blur kaca */
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius:25px;
+    padding:30px;
+    color:white;
+
+    border:1px solid rgba(0,255,136,0.3);
+    box-shadow:0 0 25px rgba(0,255,136,0.4);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    object-fit:cover;      /* biar gak gepeng */
+    border-radius:50%;     /* bikin bulat */
+    display:block;
+    margin:0 auto 20px;
+
+    border:3px solid rgba(0,255,136,0.6);
+    box-shadow:0 0 15px rgba(0,255,136,0.6);
+}
+
+h2{
+    text-align:center;
+    color:#00ff88;
+    margin:10px 0;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:14px;
+    margin-bottom:15px;
+    opacity:0.8;
+}
+
+.data{
+    margin:12px 0;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding-bottom:6px;
+    font-size:14px;
+}
+
+.status{
+    margin-top:18px;
+    background:#00c853;
+    padding:12px;
+    border-radius:25px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.btn-group{
+    margin-top:18px;
+    display:flex;
+    gap:12px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.copy{
+    background:#29b6f6;
+    color:white;
+}
+
+.back{
+    background:#222;
+    color:white;
+}

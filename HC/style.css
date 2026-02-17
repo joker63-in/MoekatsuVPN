@@ -4,6 +4,7 @@ body{
     font-family:Arial, sans-serif;
     position:relative;
     min-height:100vh;
+    color:white;
 
     display:flex;
     justify-content:center;

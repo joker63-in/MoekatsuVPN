@@ -1,8 +1,0 @@
-host=indo.net
-nama=indo
-password=merdeka
-expired=30 Februari
-port=80,8080,443
-support=TCP,SSL,WS,CDN
-alat=HC
-status=FREE

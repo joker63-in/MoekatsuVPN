@@ -1,7 +1,7 @@
-host=202.10.42.128
+host=82.153.226.86
 nama=_
-password=HidupJokowi
-expired=30 Februari
+password=serid
+expired=30Februari
 port=_
 support=_
 alat=ZIVPN

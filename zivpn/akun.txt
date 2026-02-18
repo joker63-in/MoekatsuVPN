@@ -1,8 +1,8 @@
-host=indo.net
-nama=indo
-password=merdeka
+host=202.10.42.128
+nama=_
+password=HidupJokowi
 expired=30 Februari
-port=80,8080,443
-support=TCP,SSL,WS,CDN
-alat=HC
+port=_
+support=_
+alat=ZIVPN
 status=FREE

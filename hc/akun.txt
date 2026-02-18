@@ -1,7 +1,7 @@
-host=173.214.164.104
-nama=udpcustom.online-rlnol
-password=ftbgmlho
-expired=30 Februari
+host=195.88.211.162
+nama=premium1
+password=1
+expired=lifetime
 port=1-65535/1-6900
 support=_
 alat=HC

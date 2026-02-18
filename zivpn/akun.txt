@@ -1,7 +1,7 @@
 host=82.153.226.86
 nama=_
 password=serid
-expired=30Februari
+expired=lifetime
 port=_
 support=_
 alat=ZIVPN

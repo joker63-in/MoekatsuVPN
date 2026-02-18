@@ -1,7 +1,7 @@
-host=indo.net
-nama=indo
-password=merdeka
-expired=30 Februari
+host=195.88.211.162
+nama=premium1
+password=1
+expired=lifetime
 port=80,8080,443
 support=TCP,SSL,WS,CDN
 alat=HC

@@ -1,8 +1,8 @@
-host=indo.net
-nama=indo
-password=merdeka
+host=173.214.164.104
+nama=udpcustom.online-rlnol
+password=ftbgmlho
 expired=30 Februari
-port=80,8080,443
-support=TCP,SSL,WS,CDN
+port=1-65535/1-6900
+support=_
 alat=HC
 status=FREE

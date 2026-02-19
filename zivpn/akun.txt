@@ -3,6 +3,6 @@ nama=_
 password=serid
 expired=lifetime
 port=_
-support=_
+support=FICLASH,METACLASH,MINIZIVPN
 alat=ZIVPN
 status=FREE

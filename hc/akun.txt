@@ -3,6 +3,6 @@ nama=premium1
 password=1
 expired=lifetime
 port=1-65535/1-6900
-suppor=untuk hc aja
+support=untuk hc aja
 alat=Http Custom
 status=FREE
